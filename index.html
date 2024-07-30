@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .audio-control {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .audio-control img {
+            width: 30px;
+            height: 30px;
+        }
+        .handwritten {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+    </style>
+</head>
+<body>
+    <audio id="weddingAudio" autoplay loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <button id="toggleMuteButton" class="audio-control" onclick="toggleMute()">
+            <img id="audioIcon" src="images/unmute.png" alt="Mute Icon">
+        </button>
+        <div class="main-title">
+            <h1 class="handwritten">Welcome To Our Wedding</h1>
+            <h2>Zhen Ning ❤️ Shymeei</h2>
+        </div>
+        <div class="slideshow">
+            <img src="images/pic1.jpg" alt="Wedding Pic 1" class="slide">
+            <img src="images/pic2.jpg" alt="Wedding Pic 2" class="slide">
+            <img src="images/pic3.jpg" alt="Wedding Pic 3" class="slide">
+        </div>
+        <div class="calendar">
+            <div class="handwritten">新郎：李振宁</div>
+            <div class="handwritten">❤️</div>
+            <div class="handwritten">新娘：辜诗敏</div>
+            <h2 class="wedding-date handwritten">29 November 2024</h2>
+            <div id="countdown"></div>
+        </div>
+        <div class="rsvp">
+            <h2>RSVP</h2>
+            <p>Please RSVP by November 15, 2024</p>
+            <form action="rsvp-submit.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">RSVP</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
