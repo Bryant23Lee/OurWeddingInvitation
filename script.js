@@ -1,26 +1,43 @@
-var audio = document.getElementById('weddingAudio');
-        var toggleMuteButton = document.getElementById('toggleMuteButton');
-        var isMuted = false;
-
-        function toggleMute() {
-            if (audio.paused || isMuted) {
-                audio.play();
-                toggleMuteButton.textContent = 'Mute Music';
-            } else {
-                audio.pause();
-                toggleMuteButton.textContent = 'Play Music';
-            }
-            isMuted = !isMuted;
-        }
-
 document.addEventListener('DOMContentLoaded', function() {
+    // Audio control variables
+    var audio = document.getElementById('weddingAudio');
+    var toggleMuteButton = document.getElementById('toggleMuteButton');
+    var audioIcon = document.getElementById('audioIcon');
+    var isMuted = false;
+
+    // Function to toggle mute/unmute
+    function toggleMute() {
+        if (audio.paused || isMuted) {
+            audio.play();
+            audioIcon.src = 'images/volume-button.png'; // Set the icon to unmute
+        } else {
+            audio.pause();
+            audioIcon.src = 'images/mute-option.png'; // Set the icon to mute
+        }
+        isMuted = !isMuted;
+    }
+
+    // Initialize mute button
+    if (toggleMuteButton && audio && audioIcon) {
+        toggleMuteButton.addEventListener('click', toggleMute);
+
+        // Initialize the icon based on the initial state of the audio
+        if (audio.paused) {
+            audioIcon.src = 'images/mute-option.png'; // Initial state as muted
+            isMuted = true;
+        }
+    } else {
+        console.error('Required elements not found.');
+    }
+
+    // Slideshow logic
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
 
     function showSlide(n) {
         // Hide all slides
         slides.forEach(slide => slide.style.opacity = 0);
-        
+
         // Show the nth slide with a fade effect
         slides[n].style.opacity = 1;
     }
@@ -69,9 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = weddingDate - now;
-
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
         document.getElementById('countdown').innerHTML = `${days} days left`;
     }
 
