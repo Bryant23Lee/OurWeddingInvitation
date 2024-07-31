@@ -26,6 +26,23 @@
         .handwritten {
             font-family: 'Ma Shan Zheng', cursive;
         }
+        .address-info {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .address-info h2 {
+            margin-top: 0;
+        }
+        .address-info a {
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 16px;
+        }
+        .address-info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -35,7 +52,7 @@
     </audio>
     <div class="container">
         <button id="toggleMuteButton" class="audio-control" onclick="toggleMute()">
-            <img id="audioIcon" src="images/unmute.png" alt="Mute Icon">
+            <img id="audioIcon" src="images/volume-button.png" alt="Mute Icon">
         </button>
         <div class="main-title">
             <h1 class="handwritten">Welcome To Our Wedding</h1>
@@ -47,12 +64,24 @@
             <img src="images/pic3.jpg" alt="Wedding Pic 3" class="slide">
         </div>
         <div class="calendar">
-            <div class="handwritten">新郎：李振宁</div>
-            <div class="handwritten">❤️</div>
-            <div class="handwritten">新娘：辜诗敏</div>
+            <div class="handwritten">新郎：李振宁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❤️&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新娘：辜诗敏</div>
             <h2 class="wedding-date handwritten">29 November 2024</h2>
             <div id="countdown"></div>
         </div>
+        
+        <!-- New Address Info Section -->
+        <div class="address-info">
+            <h2>Venue</h2>
+            <p>We will be celebrating at:</p>
+            <p>Vangohh Eminent<br>
+            3406 Jalan Machang Bubok 2<br>
+            Bukit Mertajam, Pulau Pinang<br>
+            Malaysia</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=3406%20Jalan%20Machang%20Bubok%202%2C%20Bukit%20Mertajam%2C%20Pulau%20Pinang%2C%20Malaysia" target="_blank">View on Google Maps</a><br>
+            <a href="https://waze.com/ul?q=3406%20Jalan%20Machang%20Bubok%202%2C%20Bukit%20Mertajam%2C%20Pulau%20Pinang%2C%20Malaysia" target="_blank">View on Waze</a>
+        </div>
+        
+        <!-- RSVP Section -->
         <div class="rsvp">
             <h2>RSVP</h2>
             <p>Please RSVP by November 15, 2024</p>
