@@ -71,8 +71,8 @@ body {
 .slide {
     position: absolute;
     top: 50%;
-    left: 55%; /* Center horizontally */
-    width: 88%;
+    left: 49%; /* Center horizontally */
+    width: 90%;
     height: auto; /* Maintain aspect ratio */
     opacity: 0;
     transition: opacity 1s ease;
