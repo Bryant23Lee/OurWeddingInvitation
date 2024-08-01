@@ -91,6 +91,7 @@ body {
     margin: 0 auto; /* Center horizontally */
     text-align: center; /* Center-align all text */
     color: #937f7f;
+    font-size: 22px;
 }
 
 .calendar h2 {
