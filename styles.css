@@ -131,56 +131,94 @@ body {
     margin-top: 10px;
 }
 
+/* Address Info Section */
 .address-info {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    border: 2px solid #d4a8a2; /* Soft, elegant border color */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     text-align: center;
+    position: relative;
 }
 
+/* Header Style */
 .address-info h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2.5em;
-    color: #8a2b2a;
-    margin-bottom: 10px;
-}
-
-.address-info .intro {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.address-info .address {
-    font-size: 1.1em;
-    line-height: 1.6;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #d63d7c; /* Elegant pinkish-red */
     margin-bottom: 20px;
+    border-bottom: 2px solid #d4a8a2; /* Subtle underline */
+    padding-bottom: 10px;
 }
 
+/* Intro Text */
+.address-info .intro {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Address Text */
+.address-info .address {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+    border-left: 4px solid #d63d7c; /* Decorative left border */
+    padding-left: 15px;
+}
+
+/* Map Links */
 .map-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .map-link {
-    font-size: 1em;
-    color: #8a2b2a;
+    font-size: 1.1em;
+    color: #d63d7c;
     text-decoration: none;
-    border: 2px solid #8a2b2a;
-    border-radius: 5px;
-    padding: 10px 15px;
-    transition: background 0.3s, color 0.3s;
+    border: 2px solid #d63d7c;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .map-link:hover {
-    background: #8a2b2a;
+    background-color: #d63d7c;
     color: #fff;
+    border-color: #d63d7c;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .address-info {
+        padding: 20px;
+    }
+
+    .address-info h2 {
+        font-size: 2.5em;
+    }
+
+    .address-info .intro {
+        font-size: 1.2em;
+    }
+
+    .address-info .address {
+        font-size: 1em;
+    }
+
+    .map-link {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
 .rsvp {
     margin-top: 20px;
 }
