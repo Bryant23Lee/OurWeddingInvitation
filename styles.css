@@ -64,8 +64,8 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
 }
 
 .slide {
@@ -83,7 +83,7 @@ body {
     opacity: 1;
 }
 .calendar {
-    background-color: rgba(255, 255, 255, 0.9); /* Soft white background for readability */
+    background-color: #fff4e4e0;
     border-radius: 10px; /* Rounded corners for a softer appearance */
     padding: 20px; /* Add some padding around the content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
