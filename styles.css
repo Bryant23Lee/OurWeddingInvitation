@@ -61,29 +61,28 @@ body {
     background-position: center -100%; /* Adjust for mute icon */
 }
 
-
 .slideshow {
     position: relative;
     overflow: hidden;
     width: 400px;
     height: 500px;
-    align-items: center; /* Vertically center items in the container */
-    justify-content: center; /* Horizontally center items in the container */
 }
 
 .slide {
     position: absolute;
-    top: 0;
-    left: 30%; 
+    top: 50%;
+    left: 50%; /* Center horizontally */
     width: 85%;
-    height: 110%;
+    height: auto; /* Maintain aspect ratio */
     opacity: 0;
     transition: opacity 1s ease;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
 }
 
 .slide.active {
     opacity: 1;
 }
+
 .calendar {
     text-align: center; /* Center text horizontally */
     margin: 0 auto;
