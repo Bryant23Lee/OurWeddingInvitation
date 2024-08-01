@@ -82,46 +82,45 @@ body {
 .slide.active {
     opacity: 1;
 }
-
 .calendar {
-    text-align: center; /* Center text horizontally */
-    margin: 0 auto;
-    max-width: 600px; /* Adjust width as needed */
-    font-size: 24px;
-    color: #796947;
-}
-.calendar .wedding-date {
-    margin-top: 20px; /* Space above the wedding date */
-}
-
-.calendar h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #796947;
+    background-color: rgba(255, 255, 255, 0.9); /* Soft white background for readability */
+    border-radius: 10px; /* Rounded corners for a softer appearance */
+    padding: 20px; /* Add some padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center-align all text */
 }
 
 .calendar h2 {
-    text-align: center;
-    font-family: Georgia, serif;
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #796947;
+    font-family: Georgia, serif; /* Elegant serif font */
+    font-size: 28px; /* Larger font size for prominence */
+    color: #8B5E3C; /* Rich brown color for a more elegant feel */
+    margin-bottom: 15px; /* Increased margin for spacing */
+    line-height: 1.2; /* Adjust line height for better readability */
 }
 
 .calendar p {
-    text-align: center;
-    font-size: 24px;
-    margin: 0;
+    font-size: 20px; /* Slightly smaller font size */
+    color: #6D4C41; /* Darker color for better contrast */
+    margin: 5px 0; /* Adjust margin for spacing */
+    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
 }
 
 .wedding-date {
-    text-align: center;
-    margin: 10px 0; /* Adjust margin as needed */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for dates */
+    font-size: 32px; /* Larger font size to highlight the date */
+    color: #D5A9A9; /* Soft pink color for a romantic touch */
+    margin: 20px 0; /* Adjust margin for spacing */
     position: relative;
+    display: inline-block; /* Make the date inline-block for better alignment */
+    padding: 10px 15px; /* Padding around the date */
+    border: 2px solid #D5A9A9; /* Soft pink border to match the color */
+    border-radius: 8px; /* Rounded corners for the date block */
+    background-color: #FAF4F4; /* Very light pink background for subtle contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
 }
+
 
 #countdown {
     text-align: center;
