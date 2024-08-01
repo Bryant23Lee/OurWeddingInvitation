@@ -72,7 +72,7 @@ body {
     position: absolute;
     top: 50%;
     left: 45%; /* Center horizontally */
-    width: 93%;
+    width: 85%;
     height: auto; /* Maintain aspect ratio */
     opacity: 0;
     transition: opacity 1s ease;
