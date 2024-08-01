@@ -64,8 +64,8 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
 
 .slide {
