@@ -72,7 +72,7 @@ body {
     position: absolute;
     top: 50%;
     left: 45%; /* Center horizontally */
-    width: 85%;
+    width: 88%;
     height: auto; /* Maintain aspect ratio */
     opacity: 0;
     transition: opacity 1s ease;
@@ -102,7 +102,7 @@ body {
 
 .calendar p {
     font-size: 20px; /* Slightly smaller font size */
-    color: #6D4C41; /* Darker color for better contrast */
+    color: #937f7f;
     margin: 5px 0; /* Adjust margin for spacing */
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
 }
