@@ -102,7 +102,7 @@ body {
 }
 
 .calendar p {
-    font-size: 23px; /* Slightly smaller font size */
+    font-size: 26px; /* Slightly smaller font size */
     color: #937f7f;
     margin: 5px 0; /* Adjust margin for spacing */
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
