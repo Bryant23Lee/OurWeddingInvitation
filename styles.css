@@ -97,8 +97,8 @@ body {
 /* Handwritten Text */
 .handwritten {
     font-family: 'Ma Shan Zheng', cursive; /* Assuming you use this for the handwritten style */
-    font-size: 1.2em; /* Smaller font size for better readability */
-    line-height: 1.5; /* Adjust line height for spacing */
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 1.4; /* Adjust line height for spacing */
     color: #937f7f; /* Matching color with the calendar */
     margin-bottom: 15px; /* Space below the handwritten text */
 }
