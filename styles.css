@@ -21,7 +21,7 @@ body {
 }
 
 .main-title h1 {
-    font-size: 65px; /* Larger font size for prominence */
+    font-size: 80px; /* Larger font size for prominence */
     font-family: 'Ma Shan Zheng', cursive; /* Apply the handwritten Chinese font */
     color: #937f7f; /* Soft purple color for wedding theme */
 }
@@ -85,7 +85,7 @@ body {
     text-align: center; /* Center text horizontally */
     margin: 0 auto;
     max-width: 600px; /* Adjust width as needed */
-    font-size: 24px;
+    font-size: 20px;
     color: #796947;
 }
 .calendar .wedding-date {
