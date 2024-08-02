@@ -65,7 +65,9 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    height: 60vh; /* Set height to 60% of viewport height for longer images */
+    height: 60vh; /* Set height to 60% of viewport height for taller images */
+    display: flex;
+    align-items: center;
 }
 
 .slide {
@@ -80,6 +82,12 @@ body {
 
 .slide.active {
     opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
 }
 
 .calendar {
