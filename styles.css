@@ -23,13 +23,13 @@ body {
 }
 
 .main-title h1 {
-    font-size: 6vw; /* Responsive font size */
+    font-size: 7.5vw; /* Responsive font size */
     font-family: 'Ma Shan Zheng', cursive;
     color: #937f7f;
 }
 
 .main-title h2 {
-    font-size: 4vw; /* Responsive font size */
+    font-size: 3.5vw; /* Responsive font size */
     font-family: 'Comic Sans MS', cursive;
     color: #978780;
     margin: 1.5% 0;
@@ -58,7 +58,7 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    height: 58vh; /* Responsive height */
+    height: 68vh; /* Responsive height */
 }
 
 .slide {
@@ -84,14 +84,14 @@ body {
 /* Calendar */
 .calendar {
     background-color: #fff4e4e0;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 90%; /* Adjust max width for smaller screens */
     margin: 0 auto;
     text-align: center;
     color: #937f7f;
-    font-size: 2.5vw; /* Responsive font size */
+    font-size: 2.0vw; /* Responsive font size */
 }
 
 .calendar h2 {
@@ -103,7 +103,7 @@ body {
 }
 
 .calendar p {
-    font-size: 2.5vw; /* Responsive font size */
+    font-size: 2.0vw; /* Responsive font size */
     color: #937f7f;
     margin: 5px 0;
     font-family: 'Open Sans', sans-serif;
