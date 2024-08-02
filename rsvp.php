@@ -24,6 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close the file handle
     fclose($fileHandle);
 
+    // Set file permissions (Make sure the PHP process has the required permissions)
+    chmod($file, 0666); // Sets read and write permissions for everyone
+
     // Redirect to a thank you page
     header("Location: thank-you.html");
     exit();
