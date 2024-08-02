@@ -23,13 +23,13 @@ body {
 }
 
 .main-title h1 {
-    font-size: 4vw; /* Responsive font size */
+    font-size: 5.2vw; /* Responsive font size */
     font-family: 'Ma Shan Zheng', cursive;
     color: #937f7f;
 }
 
 .main-title h2 {
-    font-size: 2.5vw; /* Responsive font size */
+    font-size: 4vw; /* Responsive font size */
     font-family: 'Comic Sans MS', cursive;
     color: #978780;
     margin: 1.5% 0;
@@ -58,7 +58,7 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    height: 50vh; /* Responsive height */
+    height: 55vh; /* Responsive height */
 }
 
 .slide {
@@ -91,12 +91,12 @@ body {
     margin: 0 auto;
     text-align: center;
     color: #937f7f;
-    font-size: 4vw; /* Responsive font size */
+    font-size: 3vw; /* Responsive font size */
 }
 
 .calendar h2 {
     font-family: Georgia, serif;
-    font-size: 5vw; /* Responsive font size */
+    font-size: 4.8vw; /* Responsive font size */
     color: #937f7f;
     margin-bottom: 15px;
     line-height: 1.2;
@@ -146,7 +146,7 @@ body {
 
 .address-info h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 6vw; /* Responsive font size */
+    font-size: 7vw; /* Responsive font size */
     color: #d63d7c;
     margin-bottom: 20px;
     border-bottom: 2px solid #d4a8a2;
