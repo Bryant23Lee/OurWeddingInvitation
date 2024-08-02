@@ -65,7 +65,7 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    height: 300px; /* Adjust height for better responsiveness */
+    height: 60vh; /* Set height to 60% of viewport height for longer images */
 }
 
 .slide {
@@ -157,7 +157,7 @@ body {
     }
 
     .slideshow {
-        height: 250px; /* Adjust height */
+        height: 50vh; /* Adjust height */
     }
 }
 
@@ -175,7 +175,7 @@ body {
     }
 
     .slideshow {
-        height: 200px; /* Adjust height */
+        height: 40vh; /* Adjust height */
     }
 
     .rsvp input[type="text"],
