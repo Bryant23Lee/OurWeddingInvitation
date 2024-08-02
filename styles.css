@@ -153,7 +153,7 @@ body {
 }
 .address-info h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 5vw; /* Responsive font size relative to viewport width */
+    font-size: 8vw; /* Responsive font size relative to viewport width */
     color: #d63d7c; /* Elegant pinkish-red */
     margin-bottom: 20px;
     border-bottom: 2px solid #d4a8a2; /* Subtle underline */
@@ -176,7 +176,7 @@ body {
 
 @media (max-width: 480px) { /* For smaller devices like iPhones */
     .address-info h2 {
-        font-size: 3.5vw; /* Further adjusted size for small screens */
+        font-size: 5.5vw; /* Further adjusted size for small screens */
     }
 }
 
