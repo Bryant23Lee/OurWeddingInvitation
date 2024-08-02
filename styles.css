@@ -65,7 +65,7 @@ body {
 .slideshow {
     position: relative;
     overflow: hidden;
-    height: 60vh; /* Set height to 60% of viewport height for taller images */
+    height: 65vh; /* Set height to 60% of viewport height for taller images */
     display: flex;
     align-items: center;
 }
