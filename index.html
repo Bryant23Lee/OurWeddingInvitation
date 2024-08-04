@@ -81,12 +81,18 @@
         <div class="rsvp">
             <h2>RSVP</h2>
             <p>Please RSVP by November 1, 2024</p>
-            <form name="rsvp" method="POST" data-netlify="true" id="rsvpForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <input type="hidden" name="redirect" value="/thank-you.html">
-                <button type="submit">RSVP</button>
+            <form name="contact" method="POST" data-netlify="true" netlify>
+                <input type="hidden" name="form-name" value="contact" />
+                <p>
+                    <label>Name <input type="text" name="name" required /></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" required /></label>
+                </p>
+                <input type="hidden" name="redirect" value="/thank-you.html" />
+                <p>
+                    <button type="submit">Send</button>
+                </p>
             </form>
         </div>
     </div>
