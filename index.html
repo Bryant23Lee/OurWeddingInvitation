@@ -77,24 +77,27 @@
             <a href="https://waze.com/ul?q=Vangohh%20Eminent%2C%20Penang%2C%20Malaysia" target="_blank">View on Waze</a>
         </div>
         
-        <!-- RSVP Section -->
         <div class="rsvp">
             <h2>RSVP</h2>
-            <p>Please RSVP by November 1, 2024</p>
-            <form name="contact" method="POST" data-netlify="true" netlify>
-                <input type="hidden" name="form-name" value="contact" />
-                <p>
-                    <label>Name <input type="text" name="name" required /></label>
-                </p>
-                <p>
-                    <label>Email <input type="email" name="email" required /></label>
-                </p>
-                <input type="hidden" name="redirect" value="/thank-you.html" />
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+            <p>Please let us know if you’ll be able to join us by November 1, 2024.</p>
+            <form action="https://formspree.io/f/xwpeoywk" method="POST">
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number (Optional)">
+                <label>Will you be attending?</label>
+                <select name="attendance" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Attending">Yes, I will attend</option>
+                    <option value="Not Attending">No, I cannot attend</option>
+                </select>
+                <label>Number of Guests:</label>
+                <input type="number" name="guests" min="0" placeholder="Number of additional guests" required>
+                <label>Meal Preferences:</label>
+                <textarea name="dietary" placeholder="Please specify any dietary restrictions or preferences"></textarea>
+                <button type="submit">Submit RSVP</button>
             </form>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
