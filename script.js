@@ -92,4 +92,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
+
+    // Form submission handling
+    const form = document.getElementById('rsvpForm');
+
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/thank-you.html'; // Redirect to thank-you page
+                } else {
+                    alert('There was a problem with your submission.');
+                }
+            })
+            .catch(error => {
+                alert('There was a problem with your submission.');
+            });
+        });
+    } else {
+        console.error('Form element not found.');
+    }
 });
