@@ -78,7 +78,7 @@
         .rsvp input[type="number"],
         .rsvp textarea,
         .rsvp select {
-            width: 100%;
+            width: calc(100% - 22px); /* Adjusted to fit within container */
             padding: 10px;
             margin-top: 5px;
             border: 1px solid #ddd;
@@ -161,7 +161,7 @@
                 <input type="number" id="guests" name="guests" min="0" placeholder="Number of additional guests" required>
                 
                 <label for="dietary">Meal Preferences</label>
-                <textarea id="dietary" name="dietary" placeholder="Please specify any dietary restrictions or preferences"></textarea>
+                <textarea id="dietary" name="dietary" placeholder="Specify meal selection meat or vegetarian?"></textarea>
         
                 <button type="submit">Submit RSVP</button>
             </form>
