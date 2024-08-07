@@ -97,14 +97,14 @@ body {
 /* Handwritten Text */
 .handwritten {
     font-family: 'Ma Shan Zheng', cursive; /* Assuming you use this for the handwritten style */
-    font-size: 5.0vw; /* Responsive font size */
+    font-size: 4.6vw; /* Responsive font size */
     line-height: 1.4; /* Adjust line height for spacing */
     color: #937f7f; /* Matching color with the calendar */
     margin-bottom: 15px; /* Space below the handwritten text */
 }
 .calendar h2 {
     font-family: Georgia, serif;
-    font-size: 4.6vw; /* Responsive font size */
+    font-size: 4.3vw; /* Responsive font size */
     color: #937f7f;
     margin-bottom: 15px;
     line-height: 1.2;
